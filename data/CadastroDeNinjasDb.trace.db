@@ -1,0 +1,6 @@
+2025-09-11 03:10:20.882295+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FOOD_ITEM" not found; SQL statement:
+select fi1_0.id,fi1_0.category,fi1_0.expiration_date,fi1_0.name,fi1_0.quantity from food_item fi1_0 [42102-232]
+2025-09-11 03:12:41.159624+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FOOD_ITEM" not found; SQL statement:
+insert into food_item (category,expiration_date,name,quantity,id) values (?,?,?,?,default) [42102-232]
