@@ -24,13 +24,11 @@ public class FoodItemService {
         return repository.findAll();
     }
 
-    //Listar por id
     public Optional<FoodItem> listById(Long id){
         return repository.findById(id);
     }
 
 
-    //Alterar
     public FoodItem update(Long id, FoodItem foodItem){
         Optional<FoodItem> foodExist = repository.findById(id);
         if (foodExist.isPresent()) {
